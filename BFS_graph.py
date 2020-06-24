@@ -33,7 +33,7 @@ class GF():
         while visit:
             var=visit.pop(0)
             self.graph[var].visit=True
-            print(var)
+            print(var, end = " " )
             for j in self.graph[var].dest.keys():
                 if self.graph[j].visit==False:
                     if j not in visit:
