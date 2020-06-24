@@ -24,11 +24,6 @@ class GF():
         else:
             print("Node doesnt exist!!")
 
-    def dfs_print(self,data):
-
-        list1=self.dfs_print_rec(data)
-
-
     def dfs_print_rec(self,data):
         print(self.graph[data].src, end = " ")
         self.graph[data].visit=True
@@ -54,7 +49,7 @@ def main():
         gf1.insert_edge(2,3,1)
         gf1.insert_edge(3,3,1)
 
-        gf1.dfs_print(2)
+        gf1.dfs_print_rec(2)
 
 if __name__ == '__main__':
     main()
